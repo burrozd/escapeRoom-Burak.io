@@ -1,0 +1,12 @@
+    .hero-section {
+        img {
+            width: 100%;
+            min-height: 40vh;
+            object-fit: cover;
+        }
+        img {
+            @media (min-width: 600px) {
+                max-height: 60vh;
+            }
+        }
+    }

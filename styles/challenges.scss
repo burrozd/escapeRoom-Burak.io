@@ -1,0 +1,103 @@
+    .challenges {
+        margin: 3rem 0;
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+        h2 {
+            text-align: center;
+        }
+    }
+    
+    .challenge-list {
+        display: flex;
+        flex-wrap: wrap;
+        overflow-x: scroll;
+    }
+    
+    .challenge-item {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-width: 360px;
+        max-width: 400px;
+        border-radius: 4px;
+        margin: 1em;
+        box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        .challenge-title,
+        .challenge-description,
+        .rating,
+        .challenge-meta,
+        .button {
+            margin: 0.5rem;
+        }
+        .challenge-type {
+            position: absolute;
+            background-color: #8acfe5;
+            top: 0.5em;
+            right: 0.5em;
+            padding: 0.2em;
+        }
+        .challenge-image {
+            grid-column: span 2;
+        }
+        .challenge-title {
+            grid-column: span 2;
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-top: 0.8em;
+            margin-bottom: 0;
+        }
+        .challenge-meta {
+            text-align: right;
+        }
+        .challenge-description {
+            grid-column: span 2;
+        }
+        .button {
+            grid-column: 2 / 3;
+            font-size: 0.7em;
+            padding: 1em;
+        }
+    }
+    
+    .challenges-cta {
+        //@include responsive-ctas;
+        margin: 3rem 3rem;
+    }
+    
+    .rating {
+        display: flex;
+        gap: 0.6em;
+        padding-left: 0px;
+        .star-active {
+            list-style-type: none;
+            width: 23px;
+            height: 26px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(/logos/star-active.png);
+        }
+        .star-inactive {
+            list-style-type: none;
+            width: 23px;
+            height: 26px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(/logos/star-inactive.png);
+        }
+    }
+    
+    .challenges-button {
+        grid-column: 2/3;
+        font-size: 0.7em;
+        padding: 1em;
+        background-color: #e3170a;
+        color: White;
+        width: 180px;
+        border: none;
+        border-radius: 4px;
+        margin-left: 10px;
+        margin-bottom: 6px;
+        cursor: pointer;
+    }

@@ -1,0 +1,42 @@
+.reviews-section {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6em;
+}
+
+.review-block {
+    list-style-type: none;
+    display: none;
+    &:first-child {
+        display: block;
+    }
+}
+
+.review {
+    display: grid;
+    grid-template-columns: 74px auto;
+    column-gap: 1em;
+}
+
+.quote {
+    margin: 0;
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 0.5em;
+    font-weight: normal;
+    width: 33vw;
+}
+
+.user {
+    grid-column: 2 / 3;
+}
+
+@media (min-width: 1000px) {
+    .reviews-list {
+        display: flex;
+    }
+    .review-block {
+        display: block;
+    }
+}

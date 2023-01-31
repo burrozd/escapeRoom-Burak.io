@@ -1,22 +1,24 @@
 {
-  "name": "escaperoom-burak.io",
-  "version": "1.0.0",
-  "description": "EscapeRoom",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/burrozd/EscapeRoom-Burak.io.git"
-  },
-  "author": "Burak Özdemirok",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/burrozd/EscapeRoom-Burak.io/issues"
-  },
-  "homepage": "https://github.com/burrozd/EscapeRoom-Burak.io#readme",
-  "dependencies": {
-    "sass": "^1.57.1"
-  }
+    "name": "escaperoom-burak.io",
+    "version": "1.0.0",
+    "description": "EscapeRoom",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "sass": "sass --no-source-map styles/main.scss styles/main.css",
+        "watch": "sass --no-source-map --watch styles/main.scss styles/main.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/burrozd/EscapeRoom-Burak.io.git"
+    },
+    "author": "Burak Özdemirok",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/burrozd/EscapeRoom-Burak.io/issues"
+    },
+    "homepage": "https://github.com/burrozd/EscapeRoom-Burak.io#readme",
+    "dependencies": {
+        "sass": "^1.57.1"
+    }
 }

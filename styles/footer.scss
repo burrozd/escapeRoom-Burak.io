@@ -1,0 +1,47 @@
+footer {
+    background-color: #011827;
+    color: white;
+    padding: 1rem 1rem 3rem;
+    min-height: 32vh;
+    h2 {
+        font-size: 1.2em;
+        margin: 2em 0 0.3em;
+    }
+    .footer-text {
+        margin: 0;
+        width: 26vw;
+    }
+    .footer-social-media {
+        text-align: left;
+        padding-left: 0px;
+    }
+    li {
+        list-style-type: none;
+    }
+    .misc-link+.play-link {
+        margin-top: 1em;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            color: #8acfe5;
+        }
+    }
+    @media (min-width: 1000px) {
+        margin-top: 110px;
+        padding-top: 6em;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        font-size: 0.7rem;
+        .footer-intro {
+            grid-column: 2 / 7;
+        }
+        .footer-site-map {
+            grid-column: 8 / 10;
+        }
+        .footer-social {
+            grid-column: 10 / 12;
+        }
+    }
+}

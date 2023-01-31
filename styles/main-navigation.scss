@@ -1,0 +1,42 @@
+.main-navigation {
+    a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-menu {
+        display: none;
+    }
+    .main-navigation {
+        background-color: rgba(white, 0);
+        transition: background-color 0.5s;
+    }
+}
+
+@media (min-width: 600px) {
+    .main-navigation {
+        display: block;
+        background-color: #011827;
+        padding-top: 1.8rem;
+    }
+    .main-menu {
+        margin: 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .main-menu-links {
+        list-style-type: none;
+        a {
+            display: block;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 1em 1.2em;
+            transition: color 0.5s;
+        }
+        a:hover {
+            color: #8acfe5;
+        }
+    }
+}

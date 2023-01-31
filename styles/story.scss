@@ -1,0 +1,29 @@
+.story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #011827;
+    color: white;
+    padding: 3rem 1rem;
+}
+
+.story-text {
+    max-width: 22rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.story-button {
+    position: relative;
+    top: 2vh;
+    left: 0vw;
+    color: #8acfe5;
+    background-color: #011827;
+    border: 2px solid #8acfe5;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 10px 30px;
+    cursor: pointer;
+    text-decoration: none;
+}

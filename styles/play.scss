@@ -1,0 +1,54 @@
+.play-container {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    .play {
+        margin: 0 0 2rem;
+        .play-image {
+            object-fit: cover;
+        }
+        .play-title,
+        .play-intro {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+        .play-button {
+            width: 18vw;
+            height: 8vh;
+            display: block;
+            border-radius: 4px;
+            padding: 1em 2em;
+            font-weight: 700;
+            font-size: large;
+            text-decoration: none;
+            text-align: center;
+            position: relative;
+            left: 1.7vw;
+            border-width: 0;
+            background-color: #E3170A;
+            text-decoration: none;
+            color: white;
+        }
+    }
+    @media (min-width: 600px) {
+        .play {
+            display: flex;
+            flex-direction: row;
+            font-size: 0.8rem;
+            margin-bottom: 0;
+            .button {
+                margin-top: 0;
+                font-size: 0.8rem;
+            }
+            .play-image {
+                max-width: 50%;
+            }
+            .play-info {
+                padding: 2rem;
+            }
+            &:nth-child(even) {
+                flex-direction: row-reverse;
+            }
+        }
+    }
+}
