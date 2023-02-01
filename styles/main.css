@@ -319,57 +319,59 @@ footer a:hover {
   }
 }
 
-.play-container {
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.play-container .play {
-  margin: 0 0 2rem;
-}
-.play-container .play .play-image {
-  object-fit: cover;
-}
-.play-container .play .play-title,
-.play-container .play .play-intro {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-.play-container .play .play-button {
-  min-width: 18vw;
-  min-height: 8vh;
-  display: block;
-  border-radius: 4px;
-  padding: 1em 2em;
-  font-weight: 700;
-  font-size: large;
-  text-decoration: none;
-  text-align: center;
-  position: relative;
-  left: 1.5vw;
-  border-width: 0;
-  background-color: #e3170a;
-  text-decoration: none;
-  color: white;
-}
-@media (min-width: 600px) {
+@media (max-width: 600px) {
+  .play-container {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .play-container .play {
+    margin: 0 0 2rem;
+  }
+  .play-container .play-image {
+    object-fit: cover;
+  }
+  .play-container .play-title,
+  .play-container .play-intro {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .play-container .play-button {
+    min-width: 1vw;
+    min-height: 8vh;
+    display: block;
+    border-radius: 4px;
+    padding: 1em 2em;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    left: 1.5vw;
+    border-width: 0;
+    background-color: #e3170a;
+    text-decoration: none;
+    color: white;
+  }
+}
+@media (max-width: 600px) and (min-width: 600px) {
+  .play {
     display: flex;
     flex-direction: row;
     font-size: 0.8rem;
     margin-bottom: 0;
   }
-  .play-container .play .button {
+  .play .button {
     margin-top: 0;
     font-size: 0.8rem;
   }
-  .play-container .play .play-image {
+  .play .play-image {
     max-width: 50%;
   }
-  .play-container .play .play-info {
+  .play .play-info {
     padding: 2rem;
   }
-  .play-container .play:nth-child(even) {
+  .play:nth-child(even) {
     flex-direction: row-reverse;
   }
 }
