@@ -14,11 +14,11 @@ img {
     max-width: 100%;
 }
 
-@import "./header.scss";
-@import "./main-navigation.scss";
-@import "./hero.scss";
-@import "./reviews.scss";
-@import "./challenges.scss";
+@import "./styles/header.scss";
+@import "./styles/main-navigation.scss";
+@import "./styles/hero.scss";
+@import "./styles/reviews.scss";
+@import "./styles/challenges.scss";
 @import "./story.scss";
-@import "./footer.scss";
-@import "./play";
+@import "./styles/play.scss";
+@import "./styles/footer.scss";
