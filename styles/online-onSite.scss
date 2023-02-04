@@ -1,0 +1,101 @@
+@media (min-width: 600px) {
+    .hero-challenges {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+        position: relative;
+        bottom: 2em;
+    }
+    .button-onSite {
+        display: inital;
+        border-radius: 4px;
+        padding: 1em 2em;
+        font-weight: 700;
+        text-decoration: none;
+        text-align: center;
+        border-width: 0;
+        font-size: 1.1rem;
+        background-color: #8acfe5;
+        color: #021928;
+    }
+    .button-online {
+        display: initial;
+        border-radius: 4px;
+        padding: 1em 2em;
+        font-weight: 700;
+        text-decoration: none;
+        text-align: center;
+        border-width: 0;
+        font-size: 1.1rem;
+        background-color: #e3170a;
+        margin: 0;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-challenges {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 1em;
+        position: relative;
+        bottom: 1em;
+        left: 10em;
+        max-width: 330px;
+    }
+    .button-onSite {
+        display: block;
+        border-radius: 4px;
+        padding: 1em 2em;
+        font-weight: 900;
+        text-decoration: none;
+        text-align: center;
+        border-width: 0;
+        font-size: 1.1rem;
+        background-color: #8acfe5;
+        color: #021928;
+        max-width: max-content;
+        position: relative;
+        right: 1rem;
+    }
+    .button-online {
+        background-color: transparent;
+        color: #36769d;
+        text-decoration: underline;
+        margin: 1em 0;
+        max-width: fit-content;
+        text-align: center;
+        position: relative;
+        left: 1rem;
+        font-weight: 800;
+        font-size: 1.2rem;
+    }
+}
+
+
+/* @mixin responsive-ctas {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 1em 3em;
+    .button.primary {
+        background-color: transparent;
+        color: $c-blue;
+        text-decoration: underline;
+        margin: 1em 0;
+    }
+    @media (min-width: 600px) {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1em;
+        .button.primary {
+            background-color: $c-brightred;
+            margin: 0;
+            text-decoration: none;
+            color: white;
+        }
+    }
+} */
